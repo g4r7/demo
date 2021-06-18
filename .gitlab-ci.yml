@@ -1,0 +1,13 @@
+pages:
+  stage: deploy
+
+  script:
+    - mkdir public
+    - mv `ls -A | grep -v public` ./public
+
+  artifacts:
+    paths:
+    - public
+
+  only:
+    - master
