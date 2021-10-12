@@ -30,6 +30,7 @@ if (typeof window !== 'undefined') {
   self.addEventListener("install", () => self.skipWaiting());
   self.addEventListener("activate", ev => ev.waitUntil(self.clients.claim()));
   self.addEventListener("fetch", ev => {
+
     if (ev.request.cache === "only-if-cached"
      && ev.request.mode  !== "same-origin")
       return;
