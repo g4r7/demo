@@ -45,6 +45,7 @@ rnbqkbnr/pppppppp/////PPPPPPPP/RNBQKBNR
 ```
 
 1. `c4` `e6`
+  - `Qc2`
 2. `Nf3` `Nf6`
 
 ## with start-state
